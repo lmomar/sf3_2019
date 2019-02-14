@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<div class="panel panel-danger">
+    <div class="panel-heading">
+        <h2 class="panel-title">Delete client id: {{ client.id }}</h2>
+    </div>
+    <div class="panel-body">
+        {{ form_start(form) }}
+        <div class="form-group">
+            {{ form_widget(form['confirm']) }}
+            <a href="{{ path('clients_list') }}" class="btn btn-default">Cancel</a>
+        </div>
+        {{ form_end(form) }}
+    </div>
+</div>
+{% endblock %}
