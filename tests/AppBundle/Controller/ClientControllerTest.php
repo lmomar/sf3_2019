@@ -1,20 +1,12 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: olmounir
- * Date: 18/02/2019
- * Time: 16:35
- */
 
 namespace Tests\AppBundle\Controller;
-
-
-
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 class ClientControllerTest extends WebTestCase
 {
+
 
     public function testIndexAction(){
         $client = static::createClient();
