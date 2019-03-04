@@ -20,6 +20,8 @@ class ClientController extends Controller
      */
     public function indexAction()
     {
+        $ser = $this->container->get('app_get_avatar');
+        $ser->getAvatar('xgsdfgsdf');
         $repo = $this->getDoctrine()->getRepository(Client::class);
         $list = $repo->findLIstClients();
         return $this->render('AppBundle::Client/list.html.twig', array('clients' => $list));
